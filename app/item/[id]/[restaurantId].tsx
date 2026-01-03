@@ -1,11 +1,13 @@
 import { useState } from "react";
 import { View, Text, StyleSheet, Pressable } from "react-native";
 import { useLocalSearchParams, useRouter } from "expo-router";
-import { menuItems } from "../../data/menuItems";
-import { restaurants } from "../../data/restaurants";
+import { menuItems } from "../../../data/menuItems";
+import { restaurants } from "../../../data/restaurants";
+import { useCart } from "../../../context/CartContext";
 
 export default function ItemDetail() {
   const router = useRouter();
+  const { addItem } = useCart();
   const { id, restaurantId } = useLocalSearchParams<{
     id: string;
     restaurantId: string;

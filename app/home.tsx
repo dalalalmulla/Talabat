@@ -1,6 +1,6 @@
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import { useRouter } from "expo-router";
-import { restaurants } from "./data/restaurants";
+import { restaurants } from "../data/restaurants";
 
 export default function Home() {
   const router = useRouter();

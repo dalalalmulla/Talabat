@@ -6,8 +6,8 @@ import {
   ScrollView,
 } from "react-native";
 import { useLocalSearchParams, useRouter } from "expo-router";
-import { restaurants } from "../data/restaurants";
-import { menuItems } from "../data/menuItems";
+import { restaurants } from "../../data/restaurants";
+import { menuItems } from "../../data/menuItems";
 
 export default function RestaurantDetail() {
   const router = useRouter();
